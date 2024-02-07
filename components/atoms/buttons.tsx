@@ -1,30 +1,46 @@
-import { Button } from "@mui/base";
+import { useRouter } from "next/router";
 import styled from "styled-components";
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
-const StyledBackButton = styled(Button)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-`;
-
-interface BackButtonProps {
+interface ButtonProps {
   onClick: () => void;
 }
-export const BackButton = (props: BackButtonProps) => {
+
+const StyledHomeButton = styled.img`
+  height: 10vh;
+`
+
+interface ImageButtonProps extends ButtonProps {
+  src: string;
+}
+export const HomeButton = ({ onClick, src }: ImageButtonProps) => {
   return (
-    <StyledBackButton onClick={props.onClick}>
-      <ArrowBackIosNewIcon />
-    </StyledBackButton>
+    <StyledHomeButton src={src} onClick={onClick} />
   )
 }
 
+const StyledToggleButton = styled.img`
+  height: 2vh;
+  margin-top: 5vh;
+`
+export const ToggleButton = ({ onClick, src }: ImageButtonProps) => {
+  return (
+    <StyledToggleButton src={src} onClick={onClick} />
+  )
+}
 
+const StyledBackButton = styled.img`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width : 20vw;
+`
 
-export default BackButton;
+export const BackButton = () => {
+  const router = useRouter();
+  const goBack = () => {
+    router.back();
+  }
+  return (
+    <StyledBackButton src={"/assets/buttons/backspace.png"} onClick={goBack} />
+  )
+}
