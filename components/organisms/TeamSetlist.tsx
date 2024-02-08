@@ -16,15 +16,15 @@ type ObjType = {
 const IMAGE_PATH = {
   "ob1": {
     title: "assets/texts/ob_team1.png",
-    setlist: "assets/texts/setlist_text_ob_1.png",
+    setlist: "assets/texts/setlist_text_ob_2.png",
     playlist_link: "assets/texts/playlist_link_ob_1.png",
-    youtube_link: "https://youtube.com/playlist?list=PLK-6sIB0foEKKqeCV0A_nCsuJB-s_o-qI&si=XNY96_mTyhcYFcLZ"
+    youtube_link: "https://youtube.com/playlist?list=PLK-6sIB0foEJPCsRZLigPtHOa0FUC2ZEX&si=c_hWAvnXocQ4eb6z"
   },
   "ob2": {
     title: "assets/texts/ob_team2.png",
-    setlist: "assets/texts/setlist_text_ob_2.png",
+    setlist: "assets/texts/setlist_text_ob_1.png",
     playlist_link: "assets/texts/playlist_link_ob_2.png",
-    youtube_link: "https://youtube.com/playlist?list=PLK-6sIB0foEJPCsRZLigPtHOa0FUC2ZEX&si=c_hWAvnXocQ4eb6z"
+    youtube_link: "https://youtube.com/playlist?list=PLK-6sIB0foEKKqeCV0A_nCsuJB-s_o-qI&si=XNY96_mTyhcYFcLZ"
   },
   "yb": {
     title: "assets/texts/yb_team.png",
