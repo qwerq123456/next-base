@@ -30,7 +30,7 @@ const IMAGE_PATH = {
     title: "assets/texts/yb_team.png",
     setlist: "assets/texts/setlist_text_yb.png",
     playlist_link: "assets/texts/playlist_link_yb.png",
-    youtube_link: "https://youtube.com/playlist?list=PLK-6sIB0foEKKqeCV0A_nCsuJB-s_o-qI&si=XNY96_mTyhcYFcLZ"
+    youtube_link: "https://youtube.com/playlist?list=PLK-6sIB0foEJcJRkIkczJ5C6L8e7eCktB&si=LbuFrS5rFLJvrrjj"
   },
 }
 
